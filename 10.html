@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // var a = prompt('几个人');
+    // var num = Number(a);
+    // var sum =0;
+    // var average;
+    // var max=0;
+    // var min ='';
+    // for (i=1;i<=num;i++){
+    //     var b=Number(prompt('第'+i+'个'+'多少分'));
+    //     console.log(b);
+    //     if(max<b){
+    //         max=b;
+    //     }
+    //     if(min>b){
+    //         min=1;
+    //     }
+    //     sum+=b;
+    // } 
+
+    var b=Number(prompt('输入分数'));
+     var sum =0;
+    var average;
+    var max=0;
+    var min =0;
+    var con=0;
+    while(1){
+        if(b>max){
+            max=b;
+        }else if (b!==0){
+            con++;
+        }
+        else if(b==0) {
+            
+            break;
+        }
+        sum+=b;
+        average=sum/con;
+        var b=Number(prompt('输入分数'));
+    }
+    console.log('总分为'+sum+'平均为'+average+'最大'+max+';');
+    
+</script>
+</html>
