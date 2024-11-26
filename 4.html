@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var a = prompt('请输入三角形第一条边长度');
+    var b = prompt('请输入三角形第二条边长度');
+    var c = prompt('请输入三角形第三条边长度');
+    var a1 = Number(a);
+    var b1 = Number(b);
+    var c1 =Number(c);
+    if (c1>=a1&&c1>=b1&&a1+b1>c1 
+    || b1>=a1&&b1>=c1&&a1+c1>b1 
+    || a1>=b1&&a1>=c1&&b1+c1>a1) {
+        if(a1===b1&&b1===c1) {
+            alert('是等边三角形');
+        }else if (a1===b1&&b1!==c1||
+                 b1===c1&&c1!==a1 ||
+                 a1===c1&&c1!==b1){
+            alert('是等腰三角形');
+        }else{
+            alert('是普通三角形');
+        }
+    }else {
+        alert('不能构成三角形')
+    }
+
+</script>
+</html>
