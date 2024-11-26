@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var a = prompt('请输入学生成绩');
+    var b = Number(a);
+    if(b>100 || b<0  || b%1!==0) {
+        alert('请输入0-100的整数');
+    }
+    else if (b>=90) {
+        alert('此学生成绩等级为A');
+    }else if (b>=80) {
+        alert('此学生成绩等级为B');
+    }else if (b>=70) {
+        alert('此学生成绩等级为C');
+    }else if (b>=60) {
+        alert('此学生成绩等级为D');
+    }else{
+        alert('此学生成绩不及格');
+    }
+</script>
+</html>
