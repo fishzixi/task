@@ -27,27 +27,32 @@
     //     sum+=b;
     // } 
 
-    var b=Number(prompt('输入分数'));
-     var sum =0;
+    var b=Number(prompt('输入分数,0结束输入'));
+    var sum =0;
     var average;
     var max=0;
-    var min =0;
+    var min =100;
     var con=0;
-    while(1){
-        if(b>max){
+    if(b>=0&&b<100){
+         for(i=0;b!==0;i++){
+        if(b>max) {
             max=b;
-        }else if (b!==0){
-            con++;
+            con++
         }
-        else if(b==0) {
-            
-            break;
+        if(b<min){
+            min=b;
+            con++
         }
         sum+=b;
         average=sum/con;
         var b=Number(prompt('输入分数'));
     }
-    console.log('总分为'+sum+'平均为'+average+'最大'+max+';');
+    alert('总分为'+sum+'平均为'+average+'最大'+max+';'+"最小"+min);
+    }else{
+        alert('请输入0-100之间的数');
+        var b=Number(prompt('输入分数'));
+    }
+   
     
 </script>
 </html>
